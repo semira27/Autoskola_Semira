@@ -1,0 +1,5 @@
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Infrastructure\bin\Debug\Autoskola.Infrastructure.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Infrastructure\bin\Debug\Autoskola.Infrastructure.pdb
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Infrastructure\obj\Debug\Autoskola.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Infrastructure\obj\Debug\Autoskola.Infrastructure.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Infrastructure\obj\Debug\Autoskola.Infrastructure.pdb

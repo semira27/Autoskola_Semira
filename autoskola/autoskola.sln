@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoskola.Data", "Autoskola.Data\Autoskola.Data.csproj", "{96D52273-7D25-400E-895D-5A3ACED3D938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoskola.Infrastructure", "Autoskola.Infrastructure\Autoskola.Infrastructure.csproj", "{02D726FB-DC11-41DE-BA6F-37951462CB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoskola.Web", "Autoskola.Web\Autoskola.Web.csproj", "{B8F73213-DD92-4987-8DE1-60805C800809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autoskola.API", "WebApplication1\Autoskola.API.csproj", "{DA89EB64-25ED-4E12-B124-B26E1274056F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96D52273-7D25-400E-895D-5A3ACED3D938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D52273-7D25-400E-895D-5A3ACED3D938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D52273-7D25-400E-895D-5A3ACED3D938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D52273-7D25-400E-895D-5A3ACED3D938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D726FB-DC11-41DE-BA6F-37951462CB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D726FB-DC11-41DE-BA6F-37951462CB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D726FB-DC11-41DE-BA6F-37951462CB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D726FB-DC11-41DE-BA6F-37951462CB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F73213-DD92-4987-8DE1-60805C800809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F73213-DD92-4987-8DE1-60805C800809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F73213-DD92-4987-8DE1-60805C800809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F73213-DD92-4987-8DE1-60805C800809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA89EB64-25ED-4E12-B124-B26E1274056F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA89EB64-25ED-4E12-B124-B26E1274056F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA89EB64-25ED-4E12-B124-B26E1274056F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA89EB64-25ED-4E12-B124-B26E1274056F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

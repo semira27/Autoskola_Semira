@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96D52273-7D25-400E-895D-5A3ACED3D938}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Autoskola.Data</RootNamespace>
+    <AssemblyName>Autoskola.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autoskole\DAAutoskole.cs" />
+    <Compile Include="BrojPitanja\DABrojPitanja.cs" />
+    <Compile Include="Gradovi\DAGradovi.cs" />
+    <Compile Include="KategorijePrijave\DAKategorijePrijave.cs" />
+    <Compile Include="Korisnici\DAKorisnici.cs" />
+    <Compile Include="OdabraniOdgovori\DAOdabraniOdgovori.cs" />
+    <Compile Include="PolaganjeTestova\DAPolaganjeTestova.cs" />
+    <Compile Include="Prijave\DAPrijave.cs" />
+    <Compile Include="Data\dataContext.cs" />
+    <Compile Include="Kategorije\DAKategorije.cs" />
+    <Compile Include="Migrations\201510042212006_InitialCreate.cs" />
+    <Compile Include="Migrations\201510042212006_InitialCreate.Designer.cs">
+      <DependentUpon>201510042212006_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\BrojPitanja.cs" />
+    <Compile Include="Model\Kandidati.cs" />
+    <Compile Include="Model\PitanjaKategorije.cs" />
+    <Compile Include="Model\PolaganjeTestova.cs" />
+    <Compile Include="Odgovori\DAOdgovori.cs" />
+    <Compile Include="PitanjaKategorije\DAPitanjaKategorije.cs" />
+    <Compile Include="UradjeniTestovi\DAUradjeniTestovi.cs" />
+    <Compile Include="VrstePitanja\DAVrstePitanja.cs" />
+    <Compile Include="Pitanja\DAPitanja.cs" />
+    <Compile Include="Kandidati\DAKandidati.cs" />
+    <Compile Include="Model\Administratori.cs" />
+    <Compile Include="Model\AutoSkole.cs" />
+    <Compile Include="Model\Drzave.cs" />
+    <Compile Include="Model\Gradovi.cs" />
+    <Compile Include="Model\GrupePitanja.cs" />
+    <Compile Include="Model\Instruktori.cs" />
+    <Compile Include="Model\Kategorije.cs" />
+    <Compile Include="Model\KategorijePrijave.cs" />
+    <Compile Include="Model\Korisnici.cs" />
+    <Compile Include="Model\OdabraniOdgovori.cs" />
+    <Compile Include="Model\Odgovori.cs" />
+    <Compile Include="Model\Pitanja.cs" />
+    <Compile Include="Model\PolaganjePrvePomoci.cs" />
+    <Compile Include="Model\PolaganjeVoznje.cs" />
+    <Compile Include="Model\Prijave.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\UradjeniTestovi.cs" />
+    <Compile Include="Instruktori\DAInstruktori.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Autoskola.Infrastructure\Autoskola.Infrastructure.csproj">
+      <Project>{02d726fb-dc11-41de-ba6f-37951462cb37}</Project>
+      <Name>Autoskola.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510042212006_InitialCreate.resx">
+      <DependentUpon>201510042212006_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

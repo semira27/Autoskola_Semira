@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63673A90-0DB6-4531-8AC6-1FAC6E8FD3A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Autoskola.Web</RootNamespace>
+    <AssemblyName>Autoskola.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="htmlstranice\Assets\arrows.psd" />
+    <Content Include="htmlstranice\Assets\bullets.psd" />
+    <Content Include="htmlstranice\Assets\small_arrows.psd" />
+    <Content Include="htmlstranice\Fonts\fontawesome-webfont.eot" />
+    <Content Include="htmlstranice\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="htmlstranice\Fonts\fontawesome-webfont.woff" />
+    <Content Include="htmlstranice\Fonts\FontAwesome.otf" />
+    <Content Include="Forms\Guest\404.aspx" />
+    <Content Include="Forms\Guest\Cijene.aspx" />
+    <Content Include="Forms\Guest\Faq.aspx" />
+    <Content Include="Forms\Guest\Guest.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="htmlstranice\0-base.html" />
+    <Content Include="htmlstranice\404-1.html" />
+    <Content Include="htmlstranice\404-2.html" />
+    <Content Include="htmlstranice\about1.html" />
+    <Content Include="htmlstranice\about2.html" />
+    <Content Include="htmlstranice\Assets\arrowleft.png" />
+    <Content Include="htmlstranice\Assets\arrowright.png" />
+    <Content Include="htmlstranice\Assets\arrow_large_left.png" />
+    <Content Include="htmlstranice\Assets\arrow_large_right.png" />
+    <Content Include="htmlstranice\Assets\arrow_left.png" />
+    <Content Include="htmlstranice\Assets\arrow_left2.png" />
+    <Content Include="htmlstranice\Assets\arrow_right.png" />
+    <Content Include="htmlstranice\Assets\arrow_right2.png" />
+    <Content Include="htmlstranice\Assets\black50.png" />
+    <Content Include="htmlstranice\Assets\boxed_bgtile.png" />
+    <Content Include="htmlstranice\Assets\bullet.png" />
+    <Content Include="htmlstranice\Assets\bullets.png" />
+    <Content Include="htmlstranice\Assets\bullets2.png" />
+    <Content Include="htmlstranice\Assets\bullet_boxed.png" />
+    <Content Include="htmlstranice\Assets\coloredbg.png" />
+    <Content Include="htmlstranice\Assets\grain.png" />
+    <Content Include="htmlstranice\Assets\gridtile.png" />
+    <Content Include="htmlstranice\Assets\gridtile_3x3.png" />
+    <Content Include="htmlstranice\Assets\gridtile_3x3_white.png" />
+    <Content Include="htmlstranice\Assets\gridtile_white.png" />
+    <Content Include="htmlstranice\Assets\large_left.png" />
+    <Content Include="htmlstranice\Assets\large_right.png" />
+    <Content Include="htmlstranice\Assets\loader.gif" />
+    <Content Include="htmlstranice\Assets\loader2.gif" />
+    <Content Include="htmlstranice\Assets\navigdots.png" />
+    <Content Include="htmlstranice\Assets\navigdots_bgtile.png" />
+    <Content Include="htmlstranice\Assets\shadow1.png" />
+    <Content Include="htmlstranice\Assets\shadow2.png" />
+    <Content Include="htmlstranice\Assets\shadow3.png" />
+    <Content Include="htmlstranice\Assets\small_left.png" />
+    <Content Include="htmlstranice\Assets\small_left_boxed.png" />
+    <Content Include="htmlstranice\Assets\small_right.png" />
+    <Content Include="htmlstranice\Assets\small_right_boxed.png" />
+    <Content Include="htmlstranice\Assets\timer.png" />
+    <Content Include="htmlstranice\Assets\timerdot.png" />
+    <Content Include="htmlstranice\Assets\transparent.jpg" />
+    <Content Include="htmlstranice\Assets\white50.png" />
+    <Content Include="htmlstranice\blog-3col.html" />
+    <Content Include="htmlstranice\blog-single.html" />
+    <Content Include="htmlstranice\blog1.html" />
+    <Content Include="htmlstranice\blog2.html" />
+    <Content Include="htmlstranice\blog3.html" />
+    <Content Include="htmlstranice\blog4.html" />
+    <Content Include="htmlstranice\careers.html" />
+    <Content Include="htmlstranice\clients.html" />
+    <Content Include="htmlstranice\comingsoon.html" />
+    <Content Include="htmlstranice\contactus1.html" />
+    <Content Include="htmlstranice\contactus2.html" />
+    <Content Include="htmlstranice\Css\blue.css" />
+    <Content Include="htmlstranice\Css\bootstrap.css" />
+    <Content Include="htmlstranice\Css\bootstrap.min.css" />
+    <Content Include="htmlstranice\Css\brown.css" />
+    <Content Include="htmlstranice\Css\flexslider.css" />
+    <Content Include="htmlstranice\Css\font-awesome.min.css" />
+    <Content Include="htmlstranice\Css\green.css" />
+    <Content Include="htmlstranice\Css\orange.css" />
+    <Content Include="htmlstranice\Css\owl.carousel.css" />
+    <Content Include="htmlstranice\Css\prettyPhoto.css" />
+    <Content Include="htmlstranice\Css\red.css" />
+    <Content Include="htmlstranice\Css\settings.css" />
+    <Content Include="htmlstranice\Css\slider.css" />
+    <Content Include="htmlstranice\Css\style.css" />
+    <Content Include="htmlstranice\Css\yellow.css" />
+    <Content Include="htmlstranice\events.html" />
+    <Content Include="htmlstranice\faq.html" />
+    <Content Include="htmlstranice\features1.html" />
+    <Content Include="htmlstranice\features2.html" />
+    <Content Include="htmlstranice\features3.html" />
+    <Content Include="htmlstranice\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Forms\Guest\Kontakt.aspx" />
+    <Content Include="Forms\Guest\Login.aspx" />
+    <Content Include="Forms\Guest\Naslovna.aspx" />
+    <Content Include="Forms\Guest\Registracija.aspx" />
+    <Content Include="htmlstranice\gallery.html" />
+    <Content Include="Global.asax" />
+    <Content Include="htmlstranice\grid.html" />
+    <Content Include="htmlstranice\icons.html" />
+    <Content Include="htmlstranice\Img\back.jpg" />
+    <Content Include="htmlstranice\Img\bg_direction_nav.png" />
+    <Content Include="htmlstranice\Img\clients\1.png" />
+    <Content Include="htmlstranice\Img\clients\2.png" />
+    <Content Include="htmlstranice\Img\clients\3.png" />
+    <Content Include="htmlstranice\Img\clients\4.png" />
+    <Content Include="htmlstranice\Img\clients\5.png" />
+    <Content Include="htmlstranice\Img\clients\6.png" />
+    <Content Include="htmlstranice\Img\cream.png" />
+    <Content Include="htmlstranice\Img\favicon\favicon.png" />
+    <Content Include="htmlstranice\Img\footer.png" />
+    <Content Include="htmlstranice\Img\page-head.png" />
+    <Content Include="htmlstranice\Img\parallax\1.png" />
+    <Content Include="htmlstranice\Img\parallax\2.png" />
+    <Content Include="htmlstranice\Img\parallax\3.png" />
+    <Content Include="htmlstranice\Img\parallax\4.png" />
+    <Content Include="htmlstranice\Img\parallax\arrows.png" />
+    <Content Include="htmlstranice\Img\photos\1.jpg" />
+    <Content Include="htmlstranice\Img\photos\10.jpg" />
+    <Content Include="htmlstranice\Img\photos\2.jpg" />
+    <Content Include="htmlstranice\Img\photos\3.jpg" />
+    <Content Include="htmlstranice\Img\photos\4.jpg" />
+    <Content Include="htmlstranice\Img\photos\5.jpg" />
+    <Content Include="htmlstranice\Img\photos\6.jpg" />
+    <Content Include="htmlstranice\Img\photos\7.jpg" />
+    <Content Include="htmlstranice\Img\photos\8.jpg" />
+    <Content Include="htmlstranice\Img\photos\9.jpg" />
+    <Content Include="htmlstranice\Img\photos\l1.jpg" />
+    <Content Include="htmlstranice\Img\photos\l2.jpg" />
+    <Content Include="htmlstranice\Img\photos\l3.jpg" />
+    <Content Include="htmlstranice\Img\photos\l4.jpg" />
+    <Content Include="htmlstranice\Img\photos\l5.jpg" />
+    <Content Include="htmlstranice\Img\photos\user-big.jpg" />
+    <Content Include="htmlstranice\Img\photos\user-small.jpg" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\sprite.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_square\loader.gif" />
+    <Content Include="htmlstranice\Img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="htmlstranice\Img\sep.png" />
+    <Content Include="htmlstranice\Img\slider\s11.png" />
+    <Content Include="htmlstranice\Img\slider\s21.png" />
+    <Content Include="htmlstranice\Img\slider\s22.png" />
+    <Content Include="htmlstranice\Img\slider\s23.png" />
+    <Content Include="htmlstranice\Img\slider\slide1.jpg" />
+    <Content Include="htmlstranice\Img\slider\slide2.jpg" />
+    <Content Include="htmlstranice\Img\user\1.jpg" />
+    <Content Include="htmlstranice\Img\user\2.jpg" />
+    <Content Include="htmlstranice\Img\user\3.jpg" />
+    <Content Include="htmlstranice\Img\user\4.jpg" />
+    <Content Include="htmlstranice\Img\user\5.jpg" />
+    <Content Include="htmlstranice\Img\work\1.jpg" />
+    <Content Include="htmlstranice\Img\work\2.jpg" />
+    <Content Include="htmlstranice\Img\work\3.jpg" />
+    <Content Include="htmlstranice\Img\work\4.jpg" />
+    <Content Include="htmlstranice\Img\work\5.jpg" />
+    <Content Include="htmlstranice\index-rslider.html" />
+    <Content Include="htmlstranice\index.html" />
+    <Content Include="htmlstranice\index1.html" />
+    <Content Include="htmlstranice\Js\bootstrap.js" />
+    <Content Include="htmlstranice\Js\bootstrap.min.js" />
+    <Content Include="htmlstranice\Js\custom.js" />
+    <Content Include="htmlstranice\Js\filter.js" />
+    <Content Include="htmlstranice\Js\html5shiv.js" />
+    <Content Include="htmlstranice\Js\jquery.cslider.js" />
+    <Content Include="htmlstranice\Js\jquery.flexslider-min.js" />
+    <Content Include="htmlstranice\Js\jquery.isotope.js" />
+    <Content Include="htmlstranice\Js\jquery.js" />
+    <Content Include="htmlstranice\Js\jquery.prettyPhoto.js" />
+    <Content Include="htmlstranice\Js\jquery.themepunch.plugins.min.js" />
+    <Content Include="htmlstranice\Js\jquery.themepunch.revolution.min.js" />
+    <Content Include="htmlstranice\Js\modernizr.custom.28468.js" />
+    <Content Include="htmlstranice\Js\owl.carousel.min.js" />
+    <Content Include="htmlstranice\Js\respond.min.js" />
+    <Content Include="htmlstranice\login.html" />
+    <Content Include="htmlstranice\portfolio1.html" />
+    <Content Include="htmlstranice\portfolio2.html" />
+    <Content Include="htmlstranice\pricing1.html" />
+    <Content Include="htmlstranice\pricing2.html" />
+    <Content Include="htmlstranice\process.html" />
+    <Content Include="htmlstranice\project.html" />
+    <Content Include="htmlstranice\register.html" />
+    <Content Include="htmlstranice\resume.html" />
+    <Content Include="htmlstranice\service1.html" />
+    <Content Include="htmlstranice\service2.html" />
+    <Content Include="htmlstranice\service3.html" />
+    <Content Include="htmlstranice\sitemap.html" />
+    <Content Include="htmlstranice\support.html" />
+    <Content Include="htmlstranice\testimonials.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Guest\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Cijene.aspx.cs">
+      <DependentUpon>Cijene.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Cijene.aspx.designer.cs">
+      <DependentUpon>Cijene.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Guest.Master.cs">
+      <DependentUpon>Guest.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Guest.Master.designer.cs">
+      <DependentUpon>Guest.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Kontakt.aspx.cs">
+      <DependentUpon>Kontakt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Kontakt.aspx.designer.cs">
+      <DependentUpon>Kontakt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Naslovna.aspx.cs">
+      <DependentUpon>Naslovna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Naslovna.aspx.designer.cs">
+      <DependentUpon>Naslovna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Guest\Registracija.aspx.cs">
+      <DependentUpon>Registracija.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Guest\Registracija.aspx.designer.cs">
+      <DependentUpon>Registracija.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64565</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64565/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

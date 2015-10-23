@@ -1,0 +1,12 @@
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Web.dll.config
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Web.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Web.pdb
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Data.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\EntityFramework.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Infrastructure.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Data.pdb
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\EntityFramework.xml
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\bin\Autoskola.Infrastructure.pdb
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\obj\Release\Autoskola.Web.csprojResolveAssemblyReference.cache
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\obj\Release\Autoskola.Web.dll
+C:\Users\Semira\Source\Workspaces\autoskola_diplomski\autoskola\autoskola\Autoskola.Web\obj\Release\Autoskola.Web.pdb

@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Instruktor.master.cs" Inherits="Autoskola.Web.forms.instruktor.Instruktor" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+       <meta charset="UTF-8"/>
+        <title>Autoškola | Advanced form elements</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'/>
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <!-- Custom style -->
+        <link rel="stylesheet" href="/css/custom-style.css"/>
+
+        <link href="/css/sky-forms.css" rel="stylesheet"/>  
+        <link href="/css/extended.css" rel="stylesheet"/>  
+       <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+  
+
+<body class="skin-blue">
+    <form id="form1" runat="server">
+
+  <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+              
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation" style="height:51px">
+                  <a href="/instruktor/naslovnica"  style="margin-left:20px;">
+              <img id="mainLogo" runat="server" width="130" height="50"/>  
+            </a>
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                  
+                    
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span id="lbl_imePrezime" runat="server">Ime i Prezime <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="/img/user-avatar.png" class="img-circle" alt="User Image" />
+                                    <p id="lbl_ImePrezimeBig" runat="server">
+                                        Ime i Prezime
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <asp:HyperLink ID="lnkKorisnickiProfil" runat="server" CssClass="btn btn-default btn-flat">Korisnički profil</asp:HyperLink>
+                                    </div>
+                                    <div class="pull-right">
+                                        <asp:Button ID="btn_Odjava" runat="server" Text="Odjava" CssClass="btn btn-default btn-flat" OnClick="btn_Odjava_Click"/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="/img/user-avatar.png" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p id="lbl_PozdravnaPoruka" runat="server">Hello, ImePrezime</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <div style="height:40px">
+                    </div>
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="/instruktor/naslovnica">
+                                <i class="fa fa-dashboard"></i> <span>Naslovnica</span>
+                            </a>
+                        </li>
+                          <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-edit"></i> <span>Pitanja</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="active"><a href="/instruktor/novavrstapitanja"  style="margin-left:-5px"><i class="fa fa-plus" style="margin-right:9px"></i> Dodaj vrstu pitanja</a></li>
+                                <asp:DataList ID="listPitanja" runat="server">
+                                    <ItemTemplate>
+                                <li style="height:30px; margin-top:10px"><a href='<%# String.Format("/instruktor/vrstapitanja?id={0}",Eval("GrupaPitanjaId")) %>' style="margin-left:10px"><i class="fa fa-calendar-o" style="margin-right:20px"></i><%#Eval ("Naziv") %></a></li>
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-arrows"></i> <span>Kategorije</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                 <li class="active"><a href="/instruktor/novakategorija"  style="margin-left:-5px"><i class="fa fa-plus" style="margin-right:9px"></i> Dodaj kategoriju</a></li>
+                                <asp:DataList ID="listKategorije" runat="server">
+                                    <ItemTemplate>
+                                <li style="height:30px; margin-top:10px"><a href='<%# String.Format("/instruktor/kategorija?id={0}",Eval("KategorijaId")) %>' style="margin-left:10px"><i class="fa fa-calendar-o" style="margin-right:20px"></i><%#Eval ("Naziv") %></a></li>
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </ul>
+                        </li>
+                           <li class="active">
+                            <a href="/instruktor/kandidati">
+                                <i class="fa fa-user"></i> <span>Kandidati</span>
+                            </a>
+                        </li>
+
+                         <li class="active">
+                            <a href="/instruktor/prijave">
+                                <i class="fa fa-calendar-o"></i> <span>Prijave</span>
+                            </a>
+                        </li>
+                    
+                     
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+        </div><!-- ./wrapper -->
+
+      <asp:ContentPlaceHolder ID="outsidewrapper" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <!-- add new calendar event modal -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+        <!-- Sparkline -->
+        <script src="/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+
+        <!-- AdminLTE App -->
+        <script src="/js/AdminLTE/app.js" type="text/javascript"></script>
+
+    </form>
+</body>
+</html>

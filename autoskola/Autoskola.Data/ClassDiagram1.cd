@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Autoskola.Data.Administratori" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAADAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Administratori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.AutoSkole" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAhABgCAAAAAAAAAAABAQAAgAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Model\AutoSkole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAAutoskole" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Autoskole\DAAutoskole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DABrojPitanja" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DABrojPitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DADokumenti" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dokumenti\DADokumenti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAInstruktori" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Instruktori\DAInstruktori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAKandidati" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAAAAQAAAAAAAAAAQAAAAAAAAAAAiQAACAAA=</HashCode>
+      <FileName>Kandidati\DAKandidati.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAKategorije" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Kategorije\DAKategorije.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAObavijesti" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAAACAAAAAAAAAAAAAAQAAAAAAAAAAAQAACAAA=</HashCode>
+      <FileName>Obavijesti\DAObavijesti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAOdgovori" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Odgovori\DAOdgovori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAPitanja" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Pitanja\DAPitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DASlike" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Slike\DASlike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.dataContext" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAwQAAABAgAQAAAAAAEAiQIIGwGgABACAAAAAIgCACA=</HashCode>
+      <FileName>Data\dataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DAVrstePitanja" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAEAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>VrstePitanja\DAVrstePitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DetaljiUradjenogTesta" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAIAAgAACAgAAAIAAAAAAACAAE=</HashCode>
+      <FileName>Model\DetaljiUradjenogTesta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.DetaljiVoznje">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAACAAAAAAAAAAAAACAAAAAAAAAAAAQgAAAA=</HashCode>
+      <FileName>Model\DetaljiVoznje.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Voznja" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Autoskola.Data.Dokumenti">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBQBwAAAAAAAAAAAAAAAAAAAkAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Dokumenti.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Administrator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Autoskola.Data.Drzave" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Drzave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Gradovi" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAACBAAAwAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Gradovi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.GrupePitanja" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAEAAAAE=</HashCode>
+      <FileName>Model\GrupePitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Instruktori" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAIgAAAAABAAAAAAgAAAA=</HashCode>
+      <FileName>Model\Instruktori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Kandidati" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAAAAAgAAAA=</HashCode>
+      <FileName>Model\Kandidati.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.KategorijePitanja" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAAEAAAAABAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\KategorijePitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.KategorijePrijave" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAQAAEAAAAAAAAAAAABAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\KategorijePrijave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Komentari" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAEAAACAAAAAAAAARgAAAA=</HashCode>
+      <FileName>Model\Komentari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Korisnici" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAhAQACABAAAAEAAAABBAAAkAAAAABAAgBAABAAA=</HashCode>
+      <FileName>Model\Korisnici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Obavijesti" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAACAAAAAUSAAAAACAgAIAAEAA=</HashCode>
+      <FileName>Model\Obavijesti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.OdabraniOdgovori" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAAAAAAAAAEAAAgAIAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Model\OdabraniOdgovori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Odgovori" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACCEA=</HashCode>
+      <FileName>Model\Odgovori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Pitanja" Collapsed="true">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEAAAAAAABAAAACCAACCAAAAAAAAAAAAACAAE=</HashCode>
+      <FileName>Model\Pitanja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.PolaganjePrvePomoci" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAACAAAAAgAAGAAAAAAAAAAA=</HashCode>
+      <FileName>Model\PolaganjePrvePomoci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.PolaganjeTestova" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAACAAAAAgAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\PolaganjeTestova.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.PolaganjeVoznje" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAACAAAAAgAACAACAAAAAAAA=</HashCode>
+      <FileName>Model\PolaganjeVoznje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Prijave" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwABAAAAAQAAAAAAAAAAAAIgEgEAICBAAAAAAAACA=</HashCode>
+      <FileName>Model\Prijave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Slike" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACCAEAAQAAAAAAiAAAAAAAAA=</HashCode>
+      <FileName>Model\Slike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Uplate" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAIAAAECEAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Model\Uplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.UradjeniTestovi" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQAAQAAAAAAAAAAEAAIAAAAAAAAAKAAAAAAAAAAA=</HashCode>
+      <FileName>Model\UradjeniTestovi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autoskola.Data.Voznje">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAABQAAIIUAEAACBAAAAQAAIAA=</HashCode>
+      <FileName>Model\Voznje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

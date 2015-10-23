@@ -1,0 +1,99 @@
+﻿.GridPager a, span {
+    width:100% !important;
+    height:100% !important;
+}
+
+.GridPager a, .GridPager span
+    {
+        display: block;
+        height: 30px;
+        width: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+    .GridPager a, .GridPager span
+    {
+    font-size: 12px;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    color: #666;
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09);
+    }
+
+   .GridPager a:hover 
+   {
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+    }
+    .GridPager span
+    {
+        background-color: #eee;
+        color: #23527c;
+        border-color: #ddd;
+    }
+
+    .hidden{display:none;}
+
+/*Izmjena pitanja*/
+.izmjenapitanja-form .box-body .form-group .checkbox-inline label {margin-left:-20px;line-height:normal;}
+.izmjenapitanja-form .box-body .form-group label.control-label {line-height:34px;}
+
+/*Dodavanje pitanja*/
+.novopitanje-form .box-body .form-group .checkbox-inline {margin-left:-20px;line-height:normal;}
+.novopitanje-form .box-body .form-group .checkbox-inline label {margin-left:5px;}
+.novopitanje-form .box-body .form-group .col-md-2,
+.novopitanje-form .box-body .form-group .col-lg-2 {width: 21%;}
+.novopitanje-form .box-body .form-group .col-lg-offset-2 {margin-left:21%;}
+.novopitanje-form .box-body .form-group label.full {width:100%;}
+.addBtn {float: right;margin-right: 21px;margin-top: 5px;padding: 7px;padding-top: 2px;padding-bottom: 2px;}
+.addBtn2 {margin-top: 5px;padding: 7px;padding-top: 2px;padding-bottom: 2px;}
+.removeBtn {display: inline;position: absolute;margin-left: 10px;margin-top: 8px;padding: 3px 12px !important;width: 23px;}
+.removeBtn3 {height: 27px;display: inline;position: absolute;margin-left: 5px;width: 23px;margin-top: 5px;padding: 7px;padding-top: 2px;padding-bottom: 2px;}
+.removeBtn2 {height: 27px;display: inline;position: relative;margin-right: 5px;width: 23px;float: right;}
+
+.noMarginLeft {margin-left:0px;}
+.right {float:right !important;}
+
+/*Colored boxes*/
+.boxBottom {height:26px; cursor:context-menu;}
+
+/*novaDodajPitanje*/
+.special-ddl {margin-left:108px;margin-top: 5px;margin-bottom: 5px;}
+.special-ddl-tb {margin-top: 5px;margin-bottom: 5px;}
+.specialw {width:353px !important;display:inline;}
+
+/*Grafovi*/
+.customChartDdl {display: inline !important;margin-top: 5px;margin-left: 80px;float: right;margin-right: 15px;width: 90px !important;}
+.customKnobSize {margin-right: 10px;margin-bottom: 20px;min-width: 275px;}
+
+/*novi kandidat*/
+.specialddl2 {margin-top:5px; margin-bottom:5px;width:208px !important;}
+.addBtnCorrection {position:relative;bottom:35px;margin-right: 240px !important;}
+
+/*kandidat - ucenje & provjera*/
+.imgQuestion {    height: 174px;margin-top: 10px;margin-bottom:10px;margin-left: -112.5px;left: 50%;position: relative;width: 225px;}
+.imgQ {margin-bottom:50px;}
+.odgWidth {min-width: 680px;}
+.radioAnswer {margin-bottom:30px;display:block;}
+.checkAnswer {margin-bottom:25px;display:block;}
+.failedLbl {height:50px;}
+.badgeCorrection {height: 19px !important;}
+.uspjehCorrection {margin-top:6px !important;}
+.odabranoCorr {cursor:context-menu;margin-left:5px;}
+.tdOdabranoCorr {width:30px !important;vertical-align: bottom;}
+.tacan {margin-bottom: -5px;margin-top: 5px;}
+.obj {float: left;font-size: 11px;padding-top: 11px;}
+.knobBlack{color: #000 !important;}
+.alignLeft {text-align:left !important;}
+.padding10 {padding:10px !important;}
